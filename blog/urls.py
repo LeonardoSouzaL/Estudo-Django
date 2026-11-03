@@ -1,9 +1,8 @@
+from blog import views
 from django.urls import path
-from django.contrib import admin
-from blog import views as blog_views
 
-
+# blog/
 urlpatterns = [
-    path('', blog_views.blog_page),
-
- ]
+    path('', views.blog),
+    path('exemplo/', views.exemplo),
+]

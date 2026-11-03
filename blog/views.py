@@ -3,15 +3,28 @@ from django.shortcuts import render
 
 def blog(request):
     print('blog')
+
+    context = {
+        'text' : 'blog page'
+    }
+    
     return render(
         request,
-        'blog/index.html'
+        'blog/index.html',
+        context
     )
 
 
 def exemplo(request):
     print('exemplo')
+    
+    context = {
+        'text' : 'exemplo page',
+        'title' : 'Pagina de exemplo - '
+    }
+
     return render(
         request,
-        'blog/exemplo.html'
+        'blog/exemplo.html',
+        context
     )

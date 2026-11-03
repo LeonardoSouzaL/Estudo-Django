@@ -1,0 +1,23 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Bytecode do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Banco local do Django
+db.sqlite3
+db.sqlite3-journal
+
+# Arquivos de ambiente e segredos
+.env
+.env.*
+
+# Mídia enviada em desenvolvimento
+media/
+
+# Logs
+*.log

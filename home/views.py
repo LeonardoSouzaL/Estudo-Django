@@ -5,11 +5,11 @@ def home(request):
     print('home')
 
     context = {
-        'text' : 'home page'
+        'text': 'Olá home'
     }
 
     return render(
         request,
         'home/index.html',
-        context
+        context,
     )
